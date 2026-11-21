@@ -1,0 +1,50 @@
+# Italiano (IT)
+prefix: ""
+
+general:
+  no-permission: "&cNon hai il permesso per usare questo comando."
+  player-only: "&cQuesto comando può essere usato solo in gioco."
+  player-not-found: "&cGiocatore '{player}' non trovato."
+  invalid-amount: "&cImporto non valido. Inserisci un numero positivo."
+  amount-too-large: "&cL'importo è troppo grande."
+  account-not-found: "&cAccount di '{player}' non trovato."
+  database-error: "&cSi è verificato un errore del database. Riprova più tardi."
+  unknown-subcommand: "&cSottocomando sconosciuto. Usa: {usage}"
+
+balance:
+  self: "&7Il tuo saldo: &a{balance}"
+  other: "&7Saldo di {player}: &a{balance}"
+
+pay:
+  usage: "&cUso: /pay <giocatore> <importo>"
+  self: "&cNon puoi pagare te stesso."
+  insufficient: "&cNon hai abbastanza soldi. Il tuo saldo: &a{balance}"
+  success-sender: "&7Hai pagato &a{amount} &7a &f{player}&7. Il tuo saldo: &a{balance}"
+  success-receiver: "&7Hai ricevuto &a{amount} &7da &f{player}&7. Il tuo saldo: &a{balance}"
+
+baltop:
+  header: "&8&m-----&r &aClassifica Saldi &7(Pagina {page}/{total_pages}) &8&m-----"
+  entry: "&7#{rank} &f{player}&7: &a{balance}"
+  empty: "&7Nessun account trovato."
+  invalid-page: "&cPagina non valida. Ci sono solo {total_pages} pagina/e."
+  footer: "&8&m-------------------------------"
+
+eco:
+  usage: "&cUso: /eco <give|take|set|reset> <giocatore> [importo]"
+  give:
+    usage: "&cUso: /eco give <giocatore> <importo>"
+    success: "&7Hai dato &a{amount} &7a &f{player}&7. Nuovo saldo: &a{balance}"
+    success-target: "&7Hai ricevuto &a{amount} &7da un amministratore. Il tuo saldo: &a{balance}"
+  take:
+    usage: "&cUso: /eco take <giocatore> <importo>"
+    insufficient: "&c{player} non ha abbastanza soldi. Saldo: &a{balance}"
+    success: "&7Hai rimosso &a{amount} &7da &f{player}&7. Nuovo saldo: &a{balance}"
+    success-target: "&a{amount} &7sono stati rimossi dal tuo saldo da un amministratore. Il tuo saldo: &a{balance}"
+  set:
+    usage: "&cUso: /eco set <giocatore> <importo>"
+    success: "&7Hai impostato il saldo di &f{player} &7a &a{balance}&7."
+    success-target: "&7Il tuo saldo è stato impostato a &a{balance} &7da un amministratore."
+  reset:
+    usage: "&cUso: /eco reset <giocatore>"
+    success: "&7Hai resettato il saldo di &f{player} &7a &a{balance}&7."
+    success-target: "&7Il tuo saldo è stato resettato a &a{balance} &7da un amministratore."

@@ -1,0 +1,50 @@
+# English (US)
+prefix: ""
+
+general:
+  no-permission: "&cYou do not have permission to use this command."
+  player-only: "&cThis command can only be used in-game."
+  player-not-found: "&cPlayer '{player}' was not found."
+  invalid-amount: "&cInvalid amount. Please enter a positive number."
+  amount-too-large: "&cThe amount is too large."
+  account-not-found: "&cAccount for '{player}' was not found."
+  database-error: "&cA database error occurred. Please try again later."
+  unknown-subcommand: "&cUnknown subcommand. Use: {usage}"
+
+balance:
+  self: "&7Your balance: &a{balance}"
+  other: "&7{player}'s balance: &a{balance}"
+
+pay:
+  usage: "&cUsage: /pay <player> <amount>"
+  self: "&cYou cannot pay yourself."
+  insufficient: "&cYou do not have enough money. Your balance: &a{balance}"
+  success-sender: "&7You paid &a{amount} &7to &f{player}&7. Your balance: &a{balance}"
+  success-receiver: "&7You received &a{amount} &7from &f{player}&7. Your balance: &a{balance}"
+
+baltop:
+  header: "&8&m-----&r &aTop Balances &7(Page {page}/{total_pages}) &8&m-----"
+  entry: "&7#{rank} &f{player}&7: &a{balance}"
+  empty: "&7No accounts found."
+  invalid-page: "&cInvalid page. There are only {total_pages} page(s)."
+  footer: "&8&m-------------------------------"
+
+eco:
+  usage: "&cUsage: /eco <give|take|set|reset> <player> [amount]"
+  give:
+    usage: "&cUsage: /eco give <player> <amount>"
+    success: "&7Gave &a{amount} &7to &f{player}&7. New balance: &a{balance}"
+    success-target: "&7You received &a{amount} &7from an administrator. Your balance: &a{balance}"
+  take:
+    usage: "&cUsage: /eco take <player> <amount>"
+    insufficient: "&c{player} does not have enough money. Balance: &a{balance}"
+    success: "&7Took &a{amount} &7from &f{player}&7. New balance: &a{balance}"
+    success-target: "&a{amount} &7was removed from your balance by an administrator. Your balance: &a{balance}"
+  set:
+    usage: "&cUsage: /eco set <player> <amount>"
+    success: "&7Set &f{player}&7's balance to &a{balance}&7."
+    success-target: "&7Your balance was set to &a{balance} &7by an administrator."
+  reset:
+    usage: "&cUsage: /eco reset <player>"
+    success: "&7Reset &f{player}&7's balance to &a{balance}&7."
+    success-target: "&7Your balance was reset to &a{balance} &7by an administrator."

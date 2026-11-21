@@ -1,0 +1,36 @@
+name: BetterEconomy
+main: Mellooh\BetterEconomy\BetterEconomy
+version: 1.0.0
+api: 5.0.0
+author: Mellooh
+description: A clean, multi-provider economy plugin for PocketMine-MP
+website: https://github.com/Mellooh/BetterEconomy
+
+permissions:
+  bettereconomy.command.balance:
+    description: Allows viewing your own balance
+    default: true
+  bettereconomy.command.balance.other:
+    description: Allows viewing other players' balances
+    default: op
+  bettereconomy.command.pay:
+    description: Allows paying other players
+    default: true
+  bettereconomy.command.baltop:
+    description: Allows viewing the balance leaderboard
+    default: true
+  bettereconomy.command.eco:
+    description: Allows managing player balances
+    default: op
+  bettereconomy.command.eco.give:
+    description: Allows giving money to players
+    default: op
+  bettereconomy.command.eco.take:
+    description: Allows taking money from players
+    default: op
+  bettereconomy.command.eco.set:
+    description: Allows setting player balances
+    default: op
+  bettereconomy.command.eco.reset:
+    description: Allows resetting player balances
+    default: op

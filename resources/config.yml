@@ -1,0 +1,54 @@
+# BetterEconomy configuration
+# Author: Mellooh
+
+# Language file to use from resources/languages/ (without .yml)
+language: en_US
+
+# Storage provider: sqlite, mysql, json, yaml
+provider: sqlite
+
+# Default balance for new accounts
+default-balance: 1000.00
+
+# Currency settings
+currency:
+  name: "Dollar"
+  name-plural: "Dollars"
+  symbol: "$"
+  # Format: {symbol}{amount} or {amount} {symbol}
+  format: "{symbol}{amount}"
+  # Number of decimal places to display
+  decimals: 2
+
+# Balance leaderboard settings
+baltop:
+  # Players shown per page
+  per-page: 10
+
+# SQLite settings (used when provider: sqlite)
+sqlite:
+  file: "economy.sqlite"
+
+# MySQL settings (used when provider: mysql)
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  database: "bettereconomy"
+  username: "root"
+  password: ""
+  # Connection timeout in seconds
+  timeout: 10
+
+# JSON settings (used when provider: json)
+json:
+  file: "economy.json"
+  # Pretty-print JSON for readability
+  pretty: true
+
+# YAML settings (used when provider: yaml)
+yaml:
+  file: "economy.yml"
+
+# Auto-save interval in seconds (for file-based providers and cache flushing)
+# Set to 0 to disable periodic auto-save (save still happens on shutdown/player quit).
+auto-save: 300

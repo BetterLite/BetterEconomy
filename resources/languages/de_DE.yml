@@ -1,0 +1,50 @@
+# Deutsch (DE)
+prefix: ""
+
+general:
+  no-permission: "&cDu hast keine Berechtigung, diesen Befehl zu verwenden."
+  player-only: "&cDieser Befehl kann nur im Spiel verwendet werden."
+  player-not-found: "&cSpieler '{player}' wurde nicht gefunden."
+  invalid-amount: "&cUngültiger Betrag. Bitte gib eine positive Zahl ein."
+  amount-too-large: "&cDer Betrag ist zu groß."
+  account-not-found: "&cKonto für '{player}' wurde nicht gefunden."
+  database-error: "&cEin Datenbankfehler ist aufgetreten. Bitte versuche es später erneut."
+  unknown-subcommand: "&cUnbekannter Unterbefehl. Benutze: {usage}"
+
+balance:
+  self: "&7Dein Kontostand: &a{balance}"
+  other: "&7Kontostand von {player}: &a{balance}"
+
+pay:
+  usage: "&cBenutzung: /pay <Spieler> <Betrag>"
+  self: "&cDu kannst dir nicht selbst Geld senden."
+  insufficient: "&cDu hast nicht genug Geld. Dein Kontostand: &a{balance}"
+  success-sender: "&7Du hast &a{amount} &7an &f{player} &7gezahlt. Dein Kontostand: &a{balance}"
+  success-receiver: "&7Du hast &a{amount} &7von &f{player} &7erhalten. Dein Kontostand: &a{balance}"
+
+baltop:
+  header: "&8&m-----&r &aTop Kontostände &7(Seite {page}/{total_pages}) &8&m-----"
+  entry: "&7#{rank} &f{player}&7: &a{balance}"
+  empty: "&7Keine Konten gefunden."
+  invalid-page: "&cUngültige Seite. Es gibt nur {total_pages} Seite(n)."
+  footer: "&8&m-------------------------------"
+
+eco:
+  usage: "&cBenutzung: /eco <give|take|set|reset> <Spieler> [Betrag]"
+  give:
+    usage: "&cBenutzung: /eco give <Spieler> <Betrag>"
+    success: "&7Du hast &f{player} &a{amount} &7gegeben. Neuer Kontostand: &a{balance}"
+    success-target: "&7Du hast &a{amount} &7von einem Administrator erhalten. Dein Kontostand: &a{balance}"
+  take:
+    usage: "&cBenutzung: /eco take <Spieler> <Betrag>"
+    insufficient: "&c{player} hat nicht genug Geld. Kontostand: &a{balance}"
+    success: "&7Du hast &a{amount} &7von &f{player} &7entfernt. Neuer Kontostand: &a{balance}"
+    success-target: "&a{amount} &7wurden von einem Administrator von deinem Konto entfernt. Dein Kontostand: &a{balance}"
+  set:
+    usage: "&cBenutzung: /eco set <Spieler> <Betrag>"
+    success: "&7Kontostand von &f{player} &7auf &a{balance} &7gesetzt."
+    success-target: "&7Dein Kontostand wurde von einem Administrator auf &a{balance} &7gesetzt."
+  reset:
+    usage: "&cBenutzung: /eco reset <Spieler>"
+    success: "&7Kontostand von &f{player} &7auf &a{balance} &7zurückgesetzt."
+    success-target: "&7Dein Kontostand wurde von einem Administrator auf &a{balance} &7zurückgesetzt."

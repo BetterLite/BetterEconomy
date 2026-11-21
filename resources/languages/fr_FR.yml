@@ -1,0 +1,50 @@
+# Français (FR)
+prefix: ""
+
+general:
+  no-permission: "&cVous n'avez pas la permission d'utiliser cette commande."
+  player-only: "&cCette commande ne peut être utilisée qu'en jeu."
+  player-not-found: "&cJoueur '{player}' introuvable."
+  invalid-amount: "&cMontant invalide. Veuillez entrer un nombre positif."
+  amount-too-large: "&cLe montant est trop élevé."
+  account-not-found: "&cCompte pour '{player}' introuvable."
+  database-error: "&cUne erreur de base de données s'est produite. Veuillez réessayer plus tard."
+  unknown-subcommand: "&cSous-commande inconnue. Utilisez : {usage}"
+
+balance:
+  self: "&7Votre solde : &a{balance}"
+  other: "&7Solde de {player} : &a{balance}"
+
+pay:
+  usage: "&cUtilisation : /pay <joueur> <montant>"
+  self: "&cVous ne pouvez pas vous payer vous-même."
+  insufficient: "&cVous n'avez pas assez d'argent. Votre solde : &a{balance}"
+  success-sender: "&7Vous avez payé &a{amount} &7à &f{player}&7. Votre solde : &a{balance}"
+  success-receiver: "&7Vous avez reçu &a{amount} &7de &f{player}&7. Votre solde : &a{balance}"
+
+baltop:
+  header: "&8&m-----&r &aTop Soldes &7(Page {page}/{total_pages}) &8&m-----"
+  entry: "&7#{rank} &f{player}&7: &a{balance}"
+  empty: "&7Aucun compte trouvé."
+  invalid-page: "&cPage invalide. Il n'y a que {total_pages} page(s)."
+  footer: "&8&m-------------------------------"
+
+eco:
+  usage: "&cUtilisation : /eco <give|take|set|reset> <joueur> [montant]"
+  give:
+    usage: "&cUtilisation : /eco give <joueur> <montant>"
+    success: "&7Vous avez donné &a{amount} &7à &f{player}&7. Nouveau solde : &a{balance}"
+    success-target: "&7Vous avez reçu &a{amount} &7d'un administrateur. Votre solde : &a{balance}"
+  take:
+    usage: "&cUtilisation : /eco take <joueur> <montant>"
+    insufficient: "&c{player} n'a pas assez d'argent. Solde : &a{balance}"
+    success: "&7Vous avez retiré &a{amount} &7de &f{player}&7. Nouveau solde : &a{balance}"
+    success-target: "&a{amount} &7ont été retirés de votre solde par un administrateur. Votre solde : &a{balance}"
+  set:
+    usage: "&cUtilisation : /eco set <joueur> <montant>"
+    success: "&7Vous avez défini le solde de &f{player} &7à &a{balance}&7."
+    success-target: "&7Votre solde a été défini à &a{balance} &7par un administrateur."
+  reset:
+    usage: "&cUtilisation : /eco reset <joueur>"
+    success: "&7Vous avez réinitialisé le solde de &f{player} &7à &a{balance}&7."
+    success-target: "&7Votre solde a été réinitialisé à &a{balance} &7par un administrateur."
