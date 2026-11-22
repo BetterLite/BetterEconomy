@@ -1,5 +1,4 @@
-<img width="2021" height="212" alt="minecraft_title" src="https://github.com/user-attachments/assets/83737769-2daa-4747-a265-375f66434a89" />
-
+<img width="2021" height="228" alt="minecraft_title (1)" src="https://github.com/user-attachments/assets/51169d42-c621-41b9-b7da-ab39c5c09903" />
 
 A clean, multi-provider economy plugin for **PocketMine-MP**.
 
